@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <item name="periods" type="id"/>
+    <item name="samples" type="id"/>
+    <item name="period_text" type="id"/>
+    <item name="sample_text" type="id"/>
+    <item name="threshold_text" type="id"/>
+    <item name="threshold" type="id"/>
+    <item name="top_row" type="id"/>
+    <item name="bottom_row" type="id"/>
+    <item name="chart_frame" type="id"/>
+    <item name="main_frame" type="id"/>
+    <item name="ad_frame" type="id"/>
+
+</resources>

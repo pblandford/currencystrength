@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainScreen">
+    <item
+        android:id="@+id/menu_help"
+        android:orderInCategory="100"
+        custom:showAsAction="never"
+        android:title="@string/action_help" />
+    <item
+        android:id="@+id/menu_chart"
+        android:icon="@drawable/perm_group_user_dictionary"
+        custom:showAsAction="ifRoom"
+        android:title="@string/action_chart" />
+    <item
+        android:id="@+id/menu_alerts"
+        android:icon="@drawable/perm_group_device_alarms"
+        custom:showAsAction="ifRoom"
+        android:title="@string/action_alerts" />
+
+
+</menu>

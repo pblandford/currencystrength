@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">CurrencyStrengthIndex</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_alerts">Alerts</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="default_percentage">1.0</string>
+    <string name="alert_add">New alert</string>
+    <string name="alert_delete">-</string>
+    <string name="refresh_text">Refresh</string>
+    <string name="server">Server</string>
+    <string name="server_summary">Server to get feed from</string>
+    <string name="default_server">https://pblandford.pythonanywhere.com</string>
+    <string name="action_calculator">Calculator</string>
+    <string name="account_currency">Account Currency</string>
+    <string name="account_currency_summary">Currency of your trading account</string>
+    <string name="max_loss">Maximum loss</string>
+    <string name="max_loss_summary">The maximum loss in the currently selected account currency</string>
+    <string name="go_button_text">Go</string>
+    <string name="alert_delete_confirm">Really delete this alert?</string>
+    <string name="dialog_no">Cancel</string>
+    <string name="dialog_yes">Yes</string>
+    <string name="period_spinner_desc">Period</string>
+    <string name="sample_spinner_desc">Sample size</string>
+    <string name="threshold_desc">Threshold</string>
+    <string name="add">Add</string>
+    <string name="period_desc">Period</string>
+    <string name="sample_desc">Sample</string>
+    <string name="lastpair_desc">Last pair</string>
+    <string name="lastupdate_desc">Last check</string>
+    <string name="lastalert_desc">Last alert</string>
+    <string name="title_alerts">Your Alerts</string>
+    <string name="title_chart">Currency Strength</string>
+    <string name="pref_regid">regid</string>
+    <string name="gcm_sender_id">777248550304</string>
+    <string name="url_add">/alert/add</string>
+    <string name="alert_request_failed">Could not add alert</string>
+    <string name="url_delete">/alert/delete</string>
+    <string name="alert_intent_period">period</string>
+    <string name="alert_intent_sample">sample</string>
+    <string name="alert_intent_pair">pair</string>
+    <string name="alert_intent_threshold">threshold</string>
+    <string name="percentage_download_error">An error occured downloading percentages</string>
+    <string name="percentage_empty_error">An empty percentage set was returned</string>
+    <string name="expired_response">expired</string>
+    <string name="ok">OK</string>
+    <string name="alert_time_format">HH:mm:ss  yyyy:MM:dd</string>
+    <string name="title_add_alert">Create new alert</string>
+    <string name="flurry_api_key">HGGCGMXYBTH7R3BQVTJ6</string>
+    <string name="adspace_interstitial">Interstitial</string>
+    <string name="adspace_banner">Banner</string>
+    <string name="action_help">Help</string>
+    <string name="action_chart">Chart</string>
+    <string name="title_activity_help">Help</string>
+    <string name="mm_apid">182098</string>
+    <string name="pref_ad_network">AdNet</string>
+    <string name="admob_id">ca-app-pub-2643541606004324/7212451291</string>
+    <string name="testad_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="billing_ad_free">ad_free</string>
+    <string name="adfree_button_text">Get Ad-Free version</string>
+    <string name="billing_ad_free_confirm">This will purchase the advert free version for</string>
+    <string name="purchase_failed">Could not complete purchase</string>
+    <string name="pref_purchase_data">purchaseData</string>
+    <string name="pref_is_purchased">isPurchased</string>
+    <string name="refresh">Refresh</string>
+    <string name="ad_free">Get Ad-Free version</string>
+    <string name="donate">Donate to Server Upkeep</string>
+    <string name="thankyou">Thank You - Happy Trading!</string>
+    <string name="timeout">Server timed out</string>
+    <string name="beg">Unfortunately, this app costs money to run, as I must pay for server hosting.
+    The money I was receiving from adverts and the occasional purchase did not cover my costs every month -
+    I would like to continue this app, as a lot of people enjoy it, but I don\'t want to lose money
+    on it! If you can occasionally make a small donation when you have a good day\'s trading, it will help
+    keep the server running, and maybe reward me a little for the work I\'ve put in.
+    It\s totally voluntary, and you will still be able to use all features of the app if you choose not to donate.</string>
+
+    <string-array name="currencies">
+        <item>"USD"</item>
+        <item>"GBP"</item>
+        <item>"EUR"</item>
+        <item>"JPY"</item>
+        <item>"AUD"</item>
+        <item>"NZD"</item>
+        <item>"CHF"</item>
+        <item>"CAD"</item>
+    </string-array>
+</resources>

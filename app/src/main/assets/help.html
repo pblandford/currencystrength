@@ -1,0 +1,21 @@
+<h1>Currency Strength Indicator</h1>
+
+<p>This application provides a chart of <a href="http://en.wikipedia.org/wiki/Absolute_currency_strength">Absolute Currency Strength</a> with the time periods and sample sizes configurable.</p>
+
+<p>It works in both landscape and portrait mode, though landscape is recommended - the currency movements can seem a little more exciting than they actually are when squashed in portrait mode.</p>
+
+<p>Register to receive alerts when the strength of any one currency exceeds a given percentage threshold - an alert will be sent to your device with the name of the strongest currency that increased in strength by a percentage that exceeded the threshold, and the weakest currency that decreased in strength by a percentage that exceeded the threshold. Clicking on this notification will take you to the relevant chart.</p>
+
+<p>For example, say you have an alert for the M1/50 alert (ie a period of one minute, and&nbsp; a sample size of 50), with a threshold of 1.5%.</p>
+
+<ul>
+	<li>If GBP strengthens by 2%, and JPY weakens by 1.8%, the notification will read GBP/JPY</li>
+	<li>If USD also strengthens by 1.6%, the notification will still read GBP/JPY, since only highest/lowest currencies are reported</li>
+	<li>If GBP strengthens by 2%, and no currency weakens by more than 1.5, the notification will read GBP/-</li>
+	<li>If GBP then returns to beneath a 1.5% threshold, the notification will read -/-, to indicate a currency is no longer over the threshold</li>
+</ul>
+
+<p>Alerts are handled through Google Cloud Messaging, not by polling - therefore an M1 alert will not be particularly battery heavy, as it is not actually checking every 1 minute, the server is.</p>
+
+<p>This application is in beta, please be gentle..</p>
+
