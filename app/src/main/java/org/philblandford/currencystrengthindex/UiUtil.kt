@@ -10,7 +10,6 @@ import android.view.ViewManager
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import org.jetbrains.anko.*
-import org.jetbrains.anko.sdk27.coroutines.onItemSelectedListener
 
 
 class StyledAdapter(context: Context, items: List<String>,

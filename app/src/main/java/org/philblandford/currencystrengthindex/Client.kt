@@ -37,6 +37,7 @@ object Client {
             val sets = getPercentSets(it, sample)
             onComplete(sets)
           } catch (e:Exception) {
+            Log.e(TAG, "Failed getting percentages", e)
             onError(e.message ?: "Unknown error")
           }
         },
@@ -44,10 +45,11 @@ object Client {
           if (it is TimeoutError) {
             onError(context.getString(R.string.timeout))
           } else {
+            Log.e(TAG, "Failed getting percentages ${it.message}")
             onError(it.message ?: it.toString())
           }
         })
-
+    stringRequest.setShouldCache(false)
     queue.add(stringRequest)
   }
 

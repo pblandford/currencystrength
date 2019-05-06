@@ -48,7 +48,7 @@ object AlertPoster {
     val addUrl = ctx.getString(if (action == Action.ADD) R.string.url_add else R.string.url_delete)
     val queue = Volley.newRequestQueue(ctx)
 
-    val fullUrl = "${ctx.getString(R.string.default_server)}/$addUrl/${alert.period}/${alert.sample}/${alert.threshold}"
+    val fullUrl = "${ctx.getString(R.string.default_server)}/$addUrl"
     val postRequest = object : StringRequest(Request.Method.POST, fullUrl,
         Response.Listener<String> { response ->
           if (action == Action.ADD) {
@@ -67,9 +67,14 @@ object AlertPoster {
       override fun getParams(): Map<String, String> {
         val params = HashMap<String, String>()
         params["regid"] = registrationId
+        params["period"] = alert.period.toString()
+        params["sample"] = alert.sample.toString()
+        params["threshold"] = alert.threshold.toString()
+
         return params
       }
     }
+    postRequest.setShouldCache(false)
     queue.add(postRequest)
   }
 }

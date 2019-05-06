@@ -4,14 +4,15 @@ apply plugin: 'kotlin-android'
 
 apply plugin: 'kotlin-android-extensions'
 
+
 android {
     compileSdkVersion 27
     defaultConfig {
         applicationId "org.philblandford.currencystrengthindex"
-        minSdkVersion 16
+        minSdkVersion 17
         targetSdkVersion 27
-        versionCode 29
-        versionName "1.1.4"
+        versionCode 30
+        versionName "1.1.5"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
@@ -29,12 +30,16 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
-    implementation "org.jetbrains.anko:anko:$anko_version"
-    implementation "org.jetbrains.anko:anko-appcompat-v7:0.10.6"
+
+    implementation "org.jetbrains.anko:anko-sdk27:$anko_version" // sdk15, sdk19, sdk21, sdk23 are also available
+    implementation "org.jetbrains.anko:anko-sdk27-listeners:$anko_version" // sdk15, sdk19, sdk21, sdk23 are also available
+    implementation "org.jetbrains.anko:anko-appcompat-v7:0.10.8"
     implementation 'com.android.volley:volley:1.1.1'
     implementation files('libs/achartengine-1.1.0.jar')
     implementation "com.google.android.gms:play-services-gcm:15.0.1"
     implementation 'com.google.android.gms:play-services-ads:15.0.1'
+    implementation 'com.google.firebase:firebase-core:16.0.8'
+    implementation 'com.google.firebase:firebase-messaging:17.6.0'
     implementation 'com.android.billingclient:billing:1.1'
 
 }
@@ -43,3 +48,5 @@ kotlin {
         coroutines "enable"
     }
 }
+
+apply plugin: 'com.google.gms.google-services'

@@ -8,10 +8,10 @@ import android.widget.ArrayAdapter
 import android.widget.ProgressBar
 import android.widget.Spinner
 import org.jetbrains.anko.*
-import org.jetbrains.anko.sdk27.coroutines.onClick
 import android.icu.lang.UCharacter.GraphemeClusterBreak.T
 import android.view.Gravity
 import android.widget.FrameLayout
+import org.jetbrains.anko.sdk27.listeners.onClick
 
 
 class ChartLayout<T>(val error: (String) -> Unit) : AnkoComponent<T> {

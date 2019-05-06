@@ -12,11 +12,10 @@ import android.view.View
 import android.view.ViewGroup
 import android.view.ViewManager
 import android.widget.*
-import kotlinx.coroutines.experimental.android.UI
 import org.jetbrains.anko.*
 import org.jetbrains.anko.appcompat.v7.themedAlertDialogLayout
-import org.jetbrains.anko.sdk27.coroutines.onClick
-import org.jetbrains.anko.sdk27.coroutines.onSeekBarChangeListener
+import org.jetbrains.anko.sdk27.listeners.onClick
+import org.jetbrains.anko.sdk27.listeners.onSeekBarChangeListener
 
 
 class AlertLayout<T> : AnkoComponent<T> {

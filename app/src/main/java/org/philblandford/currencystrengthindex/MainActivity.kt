@@ -1,20 +1,16 @@
 package org.philblandford.currencystrengthindex
 
-import android.app.Activity
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.util.Log
-import android.widget.ArrayAdapter
-import android.widget.Spinner
 import org.jetbrains.anko.*
-import org.jetbrains.anko.sdk27.coroutines.onClick
 import android.view.*
 import android.widget.FrameLayout
 import android.widget.LinearLayout
-import com.google.android.gms.ads.MobileAds
 import com.google.android.gms.common.GooglePlayServicesUtil
+import org.jetbrains.anko.sdk27.listeners.onClick
 
 
 class MainActivity : AppCompatActivity() {
@@ -62,7 +58,7 @@ class MainActivity : AppCompatActivity() {
 
   private fun registerGCM() {
     try {
-      RegisterClient.gcmRegister(this)
+      RegisterClient.registerInBackground(this, null)
     } catch (e: Exception) {
       Log.e(TAG, "Could not register GCM")
       GooglePlayServicesUtil.getErrorDialog(0, this,
