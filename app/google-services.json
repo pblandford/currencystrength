@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "777248550304",
+    "project_id": "global-road-737",
+    "storage_bucket": "global-road-737.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:777248550304:android:aa7b576224c977e5be08c5",
+        "android_client_info": {
+          "package_name": "org.philblandford.currencystrengthindex"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "777248550304-psmt64unr0m71kvm7vhqos8e9vu6n9j2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBiMsHns424iUS3ZOcYDg62wFQ7UykHIrg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "777248550304-psmt64unr0m71kvm7vhqos8e9vu6n9j2.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "777248550304-jv2lt0o3eeukat56k1pj0sq4ec1i0ahf.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "org.philblandford.currencystrengthindex"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
